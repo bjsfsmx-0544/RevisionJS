@@ -1,34 +1,34 @@
-# JavaScript Review
+# Revisión JavaScript 
 
-## Numbers and Strings
+## Números y Cadenas
  
- JavaScript can understand different kinds of data like numbers and string. 
-Try entering a number in the console:
+JavaScript puede entender diferentes tipos de datos como números y cadenas. 
+Intenta escribir n número en la consola:
 ```
 > 2
 ```
-Similarly, try entering any string in the console:
+De forma similar. intenta escribir cualquier cadena en la consola: 
 
 ```
-> "Hello world"
+> "Hola Mundo"
 ``` 
-Remember, strings are enclosed by quotes
+Recuerda, las cadenas están entre comillas altas o inglesas.
 
 ## Variables
 
-You can store data inside containers (variables) using "var"
+Puedes guardar datos dentro de contenedores (variables) usando "var". 
 
-Can you store your name inside a variable?
+¿Puedes guardar tu nombre dentro de una variable? 
 ```
 > var name = "Rajeev"
 ```
-Now call the variable to see what is inside it.
+Ahora, llama a la variable para ver lo que contiene. 
 ```
 > name
 ```
-You can see your name printed in the console.
+Puedes ver tu nombre impreso en la consola. 
 
-Strings are objects in JavaScript and they have some properties and functions defined. You can try some of them.
+Las cadenas son objetos en JavaScript y tienen algunas propiedades y funciones definidas. 
 
 ```
 name.length
@@ -36,26 +36,26 @@ name.length
 ```
 name.toUpperCase()
 ```
-You will be able to see your name in all caps.
+Podrás ver tu nombre en letras mayúsculas.
 
-You can also store any number inside the variable.
+También puedes guardar cualquier número dentro de una variable. 
 
 ```
 > var num = 5
 ```
 
-You can also convert a string into a number:
+También puedes convertir una cadena a un número:
 
 ```
 parseInt("123")
 ```
 
-## Arithmetic Operations
-You can use arithmetic operations on numbers using arithmetic operators (+ , - , /, *, %).
+## Operaciones aritméticas
+Puedes usar operaciones aritméticas en números usando operadores aritméticos (+ , - , /, *, %).
 
-_Note: Remind students that modulo(%) sign gives you a remainder between two numbers._
+_Nota: Recuérdale a los alumnos que el operador módulo (%) les da el remanente al dividir dos números._
 
-You can try doing different arithmetic operations on the console.  
+Puedes intentar hacer diferentes operaciones aritméticas en la consola.
 ```
 2+3
 ```
@@ -71,87 +71,87 @@ You can try doing different arithmetic operations on the console.
 ```
 12%5
 ```
-Try using '+' arithmetic operator on strings and guess what will happen:
+Intenta usar el operador aritmético '+' en cadenas y adivina lo que pasará:
 
 ```
-"Hi" + "Friend"
+"Hola" + "Amigo"
 ```
-Strings get joined together when you add them.
+Las cadenas se unen cuando las sumas.
 
-Now try using any other arithmetic operation on strings like division (/)
+Ahora intenta usar cualquier otro operador aritmético en cadenas, como la división (/).
 
 ```
 "a" / "b"
 ```
-You will get **NaN** which means not a number.
+Obtendrás un **NaN** que significa Not A Number - No es un número. 
 
-Now try dividing any number with 0:
+Ahora intenta dividir algún número entre 0: 
 
 ```
 1/0
 ```
-You will get **Infinity** as an answer.
+Obtendrás **Infinity** como respuesta. 
 
-## Booleans
-There is another boolean data type in JavaScript which can hold only **true** or **false**
+## Booleano (o lógico)
+Hay otro tipo de dato llamado booleano en JavaScript que sólo puede contener valores **true** o **false**. 
 ```
 var bool = true
 ```
 
-Comparison operators (>,<,>=,<=,===, !=) also evaluate to a boolean value.
-Try to use any of the comparison operators with numbers on the console
+Los Operadores de comparación (>,<,>=,<=,===, !=) también evalúan valores booleanos.
+Intenta usar cualquiera de los operadores de comparación con números en la consola.
 ```
 2===3
 ```
-This will print false on the console.
+Esto escribirá falso en la consola. 
 
-## Other data types
-There are two other kinds of data in JavaScript - **null** and **undefined**
+## Otros tipos de datos 
+Hay otros dos tipos de datos en JavaScript: **null** and **undefined**
 
-**null** is used when you want a variable to hold nothing.
-**undefined** is the value inside a variable when you have forgot to assign anything to it.
+**null** es usado cuando quieres que una variable no contenga nada.
+**undefined** es el valor dentro de una variable cuando has olvidado asignarle algo. 
 
 ```
 var test
 ```
-Now try to see what is inside 'test'
+Ahora intenta ver que está dentro de 'test'.
 ```
 test
 ```
-## Conditional programming
-We can use if-else block to create conditional programming. 
-Try writing a simple if-else statement:
+## Programación condicional 
+Podemos usar bloques if-else para crear programación condicional.
+Intenta escribir una oración if-else sencilla:
 ```
 if(3>2){
-	console.log("Happy")
+	console.log("Feliz")
 }
 else{
-	console.log("Not Happy")
+	console.log("No feliz")
 }
 ```
-If the condition evaluates to **true**, if block is executed; otherwise else block is executed.
+Si la condición evalúa en **true**, el bloque es ejecutado. De lo contrario, el bloque 'else' se ejecuta.
 
-Switch statement is another way in which we can do conditional programming.
+La declaración Switch es otra forma en la que podemos hacer programación condicional. 
 
 ```
 var name = "My name";
 
 switch(name) {  
 case  "My name":  
-console.log("Condition 1");  
+console.log("Condición 1");  
 break;  
 case  "my Name":  
-console.log("Condition 2");  
+console.log("Condición 2");  
 break;  
 default:  
-console.log("None of the conditions are true");
+console.log("Ninguna de las condiciones es verdadera");
 }
 ```
 
-## Loops
-Computers do not like to repeat themselves. We use loops to perform repeated function. There are two kinds of loops - **for** and **while** loop.
+## Loops (o ciclos)
+A las computadoras no les gusta repetirse. Nosotros usamos ciclos para realizar una función repetitiva. Hay dos tipos de ciclos: **for** and **while**.
 
-Write a simple **for** loop:
+Escribe un ciclo **for** sencillo:
 
 ```
 for(var i=0; i<=5; ++){
@@ -159,7 +159,7 @@ for(var i=0; i<=5; ++){
 }
 ```
 
-Write a simple **while** loop:
+Escribe un ciclo **while** sencillo: 
 
 ```
 var i =0
@@ -169,21 +169,21 @@ while (i<=5){
 }
 ```
 
-## Arrays
-Arrays are a type of data structure where you can use single variable to store a list of items.
+## Arrays (o arreglos)
+Los arreglos son un tipo de estructura de datos donde puedes usar una variable única para guardar una lista de elementos. 
 
-Write an array which stores a list of items.
+Escribe un arreglo que guarde una lista de elementos. 
 
 ```
-var friends = ["friend1","friend2","friend3"]
+var friends = ["amigo1","amigo2","amigo3"]
 ```
-You can access any item in the list using indexes.
-_Note: Counting starts from 0 on computers_
+Puedes acceder a cualquier elemento en la lista usando índices. 
+_Nota: Las computadoras comienzan a contar en 0._
 ```
 friends[0]
 ```
 
-You can also loop over all the items using **for-each** loop
+También puedes hacer ciclos dentro de los elementos usando un ciclo **for-each**.
 
 ```
 for(var index in friends){
@@ -191,33 +191,33 @@ for(var index in friends){
 }
 ```
 
-Arrays are also objects in javaScript. They have some properties and function defined.
-For example, you can get the length of the array using length property:
+Los arreglos también son objetos en JavaScript. Tienen algunas propiedades y funciones definidas. 
+Por ejemplo, puedes obtener el tamaño (lenght) de un arreglo usando la propiedad 'length':
 
 ```
 friends.length
 ```
 
-You can also push new elements into the array using push():
+También puedes incluir nuevos elementos en el arreglo usando push():
 
 ```
-friends.push("friend4")
+friends.push("amigo4")
 ```
-You can see the elements in the friends array now:
+Ahora puedes ver los elementos en el arreglo 'friends': 
 ```
 friends
 ```
 
-You can also pop out the last element from the array using pop():
+También puedes eliminar el último elemento del arreglo usando pop():
 
 ```
 friends.pop();
 ```
 
-## Functions
-Javascript has certain in-built functions which you can use.
-You can also write your own functions.
-Write a function to calculate the circumference of a circle. It should take radius as the argument.
+## Funciones
+Javascript tiene ciertas funciones preconstruidas que puedes usar. 
+También puedes escribir tus propias funciones. 
+Escribe una función para calcular la circunferencia de un círculo. Debe tomar el radio como argumento. 
 
 ```
 function circumference(radius){
@@ -225,22 +225,22 @@ function circumference(radius){
 	return circumference
 }
 ```
-Now you can use the circumference functions to calculate the radius of any circle.
+Ahora puedes usar la función 'circumference' para calcular la circunferencia de cualquier círculo. 
 
 ```
 circumference(5)
 ```
 
-## Objects
-We used classes to design blue prints of objects in javascript and then used **new** to create new object using the class.
+## Objetos
+Usamos clases para diseñar blueprints (o plantillas) de objetos en JavaScript y luego usamos **new** para crear el nuevo objeto usando la clase. 
 
-Internally JavaScript creates a new object using *new Object()*
+Internamente, JavaScript crea un nuevo objeto usando *new Object()*.
 ```
 var paddle = new Object();
 ```
-You can assign new properties and functions to test object.
+Puedes asignar nuevas propiedades y funciones para probar objetos. 
 
-Ask the student to assign a new property and function to a test object
+Pídele al alumno que asigne una nueva propiedad y función para probar un objeto. 
 
 ```
 paddle.length = 60
@@ -252,13 +252,13 @@ paddle.showLength = function(){
 }
 ```
 
-Call paddle.showLength() to see the length of the paddle.
+Llama a paddle.showLength() para ver el tamaño de 'paddle'.
 
 ```
 paddle.showLength()
 ```
 
-Call paddle object to see what's stored inside the paddle.
+Llama al objeto 'paddle' para mirar qué está guardado dentro de él. 
 
 ```
 paddle
